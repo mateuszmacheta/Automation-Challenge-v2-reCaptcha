@@ -109,7 +109,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1130,2835" sap2010:WorkflowViewState.IdRef="Sequence_11">
+  <Sequence sap:VirtualizedContainerService.HintSize="1092,3046" sap2010:WorkflowViewState.IdRef="Sequence_11">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtData" />
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="dictMapping" />
@@ -126,7 +126,7 @@
         </OutArgument>
       </ui:ReadRange.DataTable>
     </ui:ReadRange>
-    <Assign sap2010:Annotation.AnnotationText="Mapping Excel column to input text label" DisplayName="Assign mapping" sap:VirtualizedContainerService.HintSize="619,147" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap2010:Annotation.AnnotationText="Mapping Excel column to input text label" DisplayName="Assign mapping" sap:VirtualizedContainerService.HintSize="619,146" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">
           <CSharpReference x:TypeArguments="scg:Dictionary(x:String, x:String)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_17">dictMapping</CSharpReference>
@@ -152,19 +152,19 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each kvp" sap:VirtualizedContainerService.HintSize="619,297" sap2010:WorkflowViewState.IdRef="ForEach`1_4">
+    <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" CurrentIndex="{x:Null}" DisplayName="For Each kvp" sap:VirtualizedContainerService.HintSize="619,295" sap2010:WorkflowViewState.IdRef="ForEach`1_4">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="scg:KeyValuePair(x:String, x:String)">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="scg:KeyValuePair(x:String, x:String)" Name="kvp" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,166" sap2010:WorkflowViewState.IdRef="Sequence_14">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_14">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_2">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">
                   <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_18">dtData.Columns[kvp.Key].ColumnName</CSharpReference>
@@ -185,34 +185,34 @@
         </InArgument>
       </ui:ForEach.Values>
     </ui:ForEach>
-    <uix:NApplicationCard CloseMode="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Browser" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="619,2248" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="{x:Null}" InteractionMode="DebuggerApi" IsIncognito="{x:Null}" OpenMode="{x:Null}" OutUiElement="{x:Null}" ScopeGuid="b402e42b-de20-4289-8d02-a339569af225" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" WebDriverMode="{x:Null}">
+    <uix:NApplicationCard DisplayName="Browser" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="619,2462" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="b402e42b-de20-4289-8d02-a339569af225">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="585,2007" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="585,2222" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
-              <Variable x:TypeArguments="x:Int32" Name="i" />
               <Variable x:TypeArguments="ui:UiElement" Name="ourContainer" />
+              <Variable x:TypeArguments="x:Int32" Name="i" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'Start'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="551,190" sap2010:WorkflowViewState.IdRef="NClick_1" InScope="{x:Null}" InUiElement="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="b402e42b-de20-4289-8d02-a339569af225" Timeout="{x:Null}" Version="V4">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Start'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="551,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b402e42b-de20-4289-8d02-a339569af225" Version="V4">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="theautomationchallenge.com" CVScreenId="a7049b92-a3f4-4986-afee-22b2f5ce4301" ContentHash="ZmrtSnoydkyY0SQnOoxRIw" DesignTimeRectangle="52, 635, 336, 45" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Start' tag='BUTTON' /&gt;" Guid="391df966-9f3c-47c0-9901-026084f2f3ad" InformativeScreenshot="6529fa921d9cb3905ffd7b4010bb1087.png" Reference="CT4qVuziCUmEeHDkXumYWg/k30oGQL7vEmXRYw2Sgf_6Q" ScopeSelectorArgument="&lt;html app='msedge.exe' title='The Automation Challenge' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
               </uix:NClick.Target>
             </uix:NClick>
-            <ui:ForEachRow ColumnNames="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="551,1755" sap2010:WorkflowViewState.IdRef="ForEachRow_1" MaxIterations="{x:Null}" Values="{x:Null}">
+            <ui:ForEachRow ColumnNames="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="551,2601" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="549,1580" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Row DT" sap:VirtualizedContainerService.HintSize="549,2453" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:Int32" Name="i">
                         <Variable.Default>
@@ -224,21 +224,182 @@
                           <Literal x:TypeArguments="x:Int32" />
                         </Variable.Default>
                       </Variable>
+                      <Variable x:TypeArguments="ui:UiElement" Name="uiContainer" />
+                      <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="uiBoxes" />
                     </Sequence.Variables>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:ForEach x:TypeArguments="x:String" DisplayName="For Each - Click Text + Tab" sap:VirtualizedContainerService.HintSize="515,1075" sap2010:WorkflowViewState.IdRef="ForEach`1_3">
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="515,136" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:WaitUiElementAppear WaitActive="{x:Null}" DisplayName="Find Element 'DIV'" sap:VirtualizedContainerService.HintSize="416,130" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1" WaitVisible="True">
+                            <ui:WaitUiElementAppear.FoundElement>
+                              <OutArgument x:TypeArguments="ui:UiElement">
+                                <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_19">uiContainer</CSharpReference>
+                              </OutArgument>
+                            </ui:WaitUiElementAppear.FoundElement>
+                            <ui:WaitUiElementAppear.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dfd9ef08-c7ef-44fe-b376-2b419cbd6e89" InformativeScreenshot="71aa17c88de86a92499ae4d0a497c0c8" Selector="&lt;webctrl tag='DIV' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' class='bubble-element Group' style='^(?!display:\snone;).*$' matching:style='regex' /&gt;">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:WaitUiElementAppear.Target>
+                          </ui:WaitUiElementAppear>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:CommentOut>
+                    <ui:FindChildren DisplayName="Find Children" sap:VirtualizedContainerService.HintSize="515,119" sap2010:WorkflowViewState.IdRef="FindChildren_1" Scope="FIND_CHILDREN">
+                      <ui:FindChildren.Children>
+                        <OutArgument x:TypeArguments="scg:IEnumerable(ui:UiElement)">
+                          <CSharpReference x:TypeArguments="scg:IEnumerable(ui:UiElement)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_20">uiBoxes</CSharpReference>
+                        </OutArgument>
+                      </ui:FindChildren.Children>
+                      <ui:FindChildren.Filter>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">@"&lt;webctrl tag='DIV' class='bubble-element Group' style='^(?!display:\snone;).*$' matching:style='regex' /&gt;"</CSharpValue>
+                        </InArgument>
+                      </ui:FindChildren.Filter>
+                      <ui:FindChildren.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="910f8716-f7af-4a98-bb63-19d55134e651" Selector="&lt;webctrl class='bubble-r-box' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' tag='DIV' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:FindChildren.Target>
+                    </ui:FindChildren>
+                    <ui:ForEach x:TypeArguments="ui:UiElement" CurrentIndex="{x:Null}" DisplayName="For Each currentUiElement" sap:VirtualizedContainerService.HintSize="515,845" sap2010:WorkflowViewState.IdRef="ForEach`1_5">
+                      <ui:ForEach.Body>
+                        <ActivityAction x:TypeArguments="ui:UiElement">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ui:UiElement" Name="currentUiElement" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="504,715" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="x:Int32" Name="result" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="visibility" DisplayName="Get Attribute" sap:VirtualizedContainerService.HintSize="470,215" sap2010:WorkflowViewState.IdRef="GetAttribute_1">
+                              <ui:GetAttribute.Result>
+                                <OutArgument x:TypeArguments="x:Int32">
+                                  <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_22">result</CSharpReference>
+                                </OutArgument>
+                              </ui:GetAttribute.Result>
+                              <ui:GetAttribute.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Id="a70e884d-45d6-4a48-91d8-d12a2205e1bc">
+                                  <ui:Target.Element>
+                                    <InArgument x:TypeArguments="ui:UiElement">
+                                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_48">currentUiElement</CSharpValue>
+                                    </InArgument>
+                                  </ui:Target.Element>
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:GetAttribute.Target>
+                            </ui:GetAttribute>
+                            <If DisplayName="If Visible" sap:VirtualizedContainerService.HintSize="470,440" sap2010:WorkflowViewState.IdRef="If_1">
+                              <If.Condition>
+                                <InArgument x:TypeArguments="x:Boolean">
+                                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_56">result == 0</CSharpValue>
+                                </InArgument>
+                              </If.Condition>
+                              <If.Then>
+                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,222" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="ui:UiElement">
+                                        <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_23">uiContainer</CSharpReference>
+                                      </OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="ui:UiElement">
+                                        <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_53">currentUiElement</CSharpValue>
+                                      </InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                  <ui:Break sap:VirtualizedContainerService.HintSize="434,48" sap2010:WorkflowViewState.IdRef="Break_1" />
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,89" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEach.Body>
+                      <ui:ForEach.Values>
+                        <InArgument x:TypeArguments="sc:IEnumerable">
+                          <CSharpValue x:TypeArguments="sc:IEnumerable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_47">uiBoxes</CSharpValue>
+                        </InArgument>
+                      </ui:ForEach.Values>
+                    </ui:ForEach>
+                    <ui:CheckTrue DisplayName="Check True" ErrorMessage="Couldn't Find Container That's Visible" sap:VirtualizedContainerService.HintSize="515,161" sap2010:WorkflowViewState.IdRef="CheckTrue_1">
+                      <ui:CheckTrue.Expression>
+                        <InArgument x:TypeArguments="x:Boolean">
+                          <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_54">uiContainer != null</CSharpValue>
+                        </InArgument>
+                      </ui:CheckTrue.Expression>
+                    </ui:CheckTrue>
+                    <uix:NHighlight Color="Magenta" DisplayName="Highlight" HealingAgentBehavior="SameAsCard" HighlightTime="3" sap:VirtualizedContainerService.HintSize="515,169" sap2010:WorkflowViewState.IdRef="NHighlight_1" Version="V4">
+                      <uix:NHighlight.InUiElement>
+                        <InArgument x:TypeArguments="ui:UiElement">
+                          <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_55">uiContainer</CSharpValue>
+                        </InArgument>
+                      </uix:NHighlight.InUiElement>
+                    </uix:NHighlight>
+                    <ui:ForEach x:TypeArguments="x:String" DisplayName="For Each - Click Text + Tab" sap:VirtualizedContainerService.HintSize="515,783" sap2010:WorkflowViewState.IdRef="ForEach`1_3">
                       <ui:ForEach.Body>
                         <ActivityAction x:TypeArguments="x:String">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:String" Name="currentText" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="513,944" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="513,653" sap2010:WorkflowViewState.IdRef="Sequence_13">
                             <Sequence.Variables>
-                              <Variable x:TypeArguments="x:String" Name="labelName" />
+                              <Variable x:TypeArguments="x:String" Name="labelName">
+                                <Variable.Default>
+                                  <Literal x:TypeArguments="x:String">Company Name</Literal>
+                                </Variable.Default>
+                              </Variable>
                               <Variable x:TypeArguments="x:String" Name="value" />
                             </Sequence.Variables>
                             <sap:WorkflowViewStateService.ViewState>
@@ -246,7 +407,7 @@
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,180" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
+                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,179" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
                               <ui:MultipleAssign.AssignOperations>
                                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
@@ -276,52 +437,40 @@
                                 </scg:List>
                               </ui:MultipleAssign.AssignOperations>
                             </ui:MultipleAssign>
-                            <uix:NSetClipboard DisplayName="Set Clipboard" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,123" sap2010:WorkflowViewState.IdRef="NSetClipboard_1" ScopeIdentifier="b402e42b-de20-4289-8d02-a339569af225" Version="V4">
-                              <uix:NSetClipboard.Text>
-                                <InArgument x:TypeArguments="x:String">
-                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_33">value</CSharpValue>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="479,173" sap2010:WorkflowViewState.IdRef="LogMessage_3">
+                              <ui:LogMessage.Message>
+                                <InArgument x:TypeArguments="x:Object">
+                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_42">$"{(i+1):D2} Entering {labelName}"</CSharpValue>
                                 </InArgument>
-                              </uix:NSetClipboard.Text>
-                            </uix:NSetClipboard>
-                            <ui:ClickText ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" FormattedText="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Text labelName" sap:VirtualizedContainerService.HintSize="479,188" sap2010:WorkflowViewState.IdRef="ClickText_1" KeyModifiers="None" MouseButton="BTN_LEFT" Occurrence="1">
-                              <ui:ClickText.CursorPosition>
-                                <ui:CursorPosition Position="Center">
-                                  <ui:CursorPosition.OffsetX>
-                                    <InArgument x:TypeArguments="x:Int32" />
-                                  </ui:CursorPosition.OffsetX>
-                                  <ui:CursorPosition.OffsetY>
-                                    <InArgument x:TypeArguments="x:Int32" />
-                                  </ui:CursorPosition.OffsetY>
-                                </ui:CursorPosition>
-                              </ui:ClickText.CursorPosition>
-                              <ui:ClickText.Target>
-                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ccfe3331-bff3-4bb9-8d3d-7da59b15dcf5" InformativeScreenshot="066d3edf932c9fac2dbcd18d97809762" Selector="&lt;webctrl tag='BODY' /&gt;">
-                                  <ui:Target.TimeoutMS>
-                                    <InArgument x:TypeArguments="x:Int32" />
-                                  </ui:Target.TimeoutMS>
-                                  <ui:Target.WaitForReady>
-                                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                                  </ui:Target.WaitForReady>
-                                </ui:Target>
-                              </ui:ClickText.Target>
-                              <ui:ClickText.Text>
-                                <InArgument x:TypeArguments="x:String">
-                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_39">labelName</CSharpValue>
-                                </InArgument>
-                              </ui:ClickText.Text>
-                            </ui:ClickText>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Whole Page'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b402e42b-de20-4289-8d02-a339569af225" Version="V4">
-                              <uix:NClick.Target>
-                                <uix:TargetAnchorable BrowserURL="theautomationchallenge.com" ContentHash="LDtbEPYs50GXl7ohYkvz6A" DesignTimeRectangle="12, 127, 1912, 917" FullSelectorArgument="&lt;webctrl tag='BODY' /&gt;" Guid="7eae7c4e-cd02-4d09-8d0d-219afd8debb2" ImageBase64="" InformativeScreenshot="d1e08626791d0827fd9e946f55a90e6a.png" Reference="CT4qVuziCUmEeHDkXumYWg/J4Rr_VXqqkuuwOEKQ2cBRQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='The Automation Challenge' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
-                                  <uix:TargetAnchorable.CvTextArgument>
+                              </ui:LogMessage.Message>
+                            </ui:LogMessage>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Company Name'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,241" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="b402e42b-de20-4289-8d02-a339569af225" Version="V4">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="theautomationchallenge.com" ContentHash="-hvohXG4xkCkWjDLsaUwFg" DesignTimeRectangle="993, 247, 173, 41" ElementType="InputBox" Guid="1a21542b-a4a4-49ae-b621-267c52d5780c" ImageBase64="" InformativeScreenshot="a06e6b00c9d64ae80803778e8f5206db.png" IsResponsive="True" Reference="CT4qVuziCUmEeHDkXumYWg/lbggFs9aGkWp06nnKOwpSA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='The Automation Challenge' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="993, 215, 170, 22" ElementType="Text" Guid="60c8cb55-93a6-4c0b-bb44-c01d77c19424" ImageBase64="" SearchSteps="Selector">
+                                        <uix:Target.FullSelectorArgument>
+                                          <InArgument x:TypeArguments="x:String">
+                                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">string.Format("&lt;webctrl aaname='{0}' class='content' tag='DIV' idx='2' /&gt;", labelName)</CSharpValue>
+                                          </InArgument>
+                                        </uix:Target.FullSelectorArgument>
+                                      </uix:Target>
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                  <uix:TargetAnchorable.FullSelectorArgument>
                                     <InArgument x:TypeArguments="x:String">
-                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_38">labelName</CSharpValue>
+                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_44" xml:space="preserve">uiContainer.Selector.Text +  string.Format("&lt;webctrl aaname='{0}' class='content' tag='DIV' /&gt;&lt;nav up='2' /&gt;&lt;webctrl tag='INPUT' /&gt;", labelName)</CSharpValue>
                                     </InArgument>
-                                  </uix:TargetAnchorable.CvTextArgument>
+                                  </uix:TargetAnchorable.FullSelectorArgument>
                                 </uix:TargetAnchorable>
-                              </uix:NClick.Target>
-                            </uix:NClick>
-                            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayBetweenKeys="0.1" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,203" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(Tab)][u(hk)][d(hk)][d(ctrl)]v[u(ctrl)][u(hk)]" Version="V4" />
+                              </uix:NTypeInto.Target>
+                              <uix:NTypeInto.Text>
+                                <InArgument x:TypeArguments="x:String">
+                                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_41">value</CSharpValue>
+                                </InArgument>
+                              </uix:NTypeInto.Text>
+                            </uix:NTypeInto>
                           </Sequence>
                         </ActivityAction>
                       </ui:ForEach.Body>
@@ -336,272 +485,15 @@
                         </InArgument>
                       </ui:ForEach.Values>
                     </ui:ForEach>
-                    <ui:CommentOut sap2010:Annotation.AnnotationText="Fill Form" DisplayName="Comment Out - Fill Form" sap:VirtualizedContainerService.HintSize="515,88" sap2010:WorkflowViewState.IdRef="CommentOut_5">
-                      <ui:CommentOut.Body>
-                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,219" sap2010:WorkflowViewState.IdRef="Sequence_12">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <uix:NFillForm ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Fill Form" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,159" sap2010:WorkflowViewState.IdRef="NFillForm_2" InUiElement="{x:Null}" OutUiElement="{x:Null}" ScopeIdentifier="b402e42b-de20-4289-8d02-a339569af225" Timeout="{x:Null}" Version="V4">
-                            <uix:NFillForm.DataSource>
-                              <InArgument x:TypeArguments="x:Object">
-                                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">
-                                  <CSharpValue.Result>
-                                    <OutArgument x:TypeArguments="x:Object" />
-                                  </CSharpValue.Result>row</CSharpValue>
-                              </InArgument>
-                            </uix:NFillForm.DataSource>
-                          </uix:NFillForm>
-                        </Sequence>
-                      </ui:CommentOut.Body>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ui:CommentOut>
-                    <ui:CommentOut sap2010:Annotation.AnnotationText="For Each" DisplayName="Comment Out - For Each" sap:VirtualizedContainerService.HintSize="515,88" sap2010:WorkflowViewState.IdRef="CommentOut_4">
-                      <ui:CommentOut.Body>
-                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="549,909" sap2010:WorkflowViewState.IdRef="Sequence_10">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="kvp.key - column name&#xA;kvp.value - field label on input form" DisplayName="For Each kvp" sap:VirtualizedContainerService.HintSize="515,849" sap2010:WorkflowViewState.IdRef="ForEach`1_2">
-                            <ui:ForEach.Body>
-                              <ActivityAction x:TypeArguments="scg:KeyValuePair(x:String, x:String)">
-                                <ActivityAction.Argument>
-                                  <DelegateInArgument x:TypeArguments="scg:KeyValuePair(x:String, x:String)" Name="kvp" />
-                                </ActivityAction.Argument>
-                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="513,686" sap2010:WorkflowViewState.IdRef="Sequence_5">
-                                  <Sequence.Variables>
-                                    <Variable x:TypeArguments="x:String" Name="columnName" />
-                                    <Variable x:TypeArguments="x:String" Default="EIN" Name="labelName" />
-                                    <Variable x:TypeArguments="x:String" Name="value" />
-                                  </Sequence.Variables>
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                  <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,210" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
-                                    <ui:MultipleAssign.AssignOperations>
-                                      <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
-                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
-                                          <ui:AssignOperation.To>
-                                            <OutArgument x:TypeArguments="x:String">
-                                              <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">columnName</CSharpReference>
-                                            </OutArgument>
-                                          </ui:AssignOperation.To>
-                                          <ui:AssignOperation.Value>
-                                            <InArgument x:TypeArguments="x:String">
-                                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">kvp.Key</CSharpValue>
-                                            </InArgument>
-                                          </ui:AssignOperation.Value>
-                                        </ui:AssignOperation>
-                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
-                                          <ui:AssignOperation.To>
-                                            <OutArgument x:TypeArguments="x:String">
-                                              <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">labelName</CSharpReference>
-                                            </OutArgument>
-                                          </ui:AssignOperation.To>
-                                          <ui:AssignOperation.Value>
-                                            <InArgument x:TypeArguments="x:String">
-                                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">kvp.Value</CSharpValue>
-                                            </InArgument>
-                                          </ui:AssignOperation.Value>
-                                        </ui:AssignOperation>
-                                        <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
-                                          <ui:AssignOperation.To>
-                                            <OutArgument x:TypeArguments="x:String">
-                                              <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">value</CSharpReference>
-                                            </OutArgument>
-                                          </ui:AssignOperation.To>
-                                          <ui:AssignOperation.Value>
-                                            <InArgument x:TypeArguments="x:String">
-                                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">row[columnName].ToString()</CSharpValue>
-                                            </InArgument>
-                                          </ui:AssignOperation.Value>
-                                        </ui:AssignOperation>
-                                      </scg:List>
-                                    </ui:MultipleAssign.AssignOperations>
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                  </ui:MultipleAssign>
-                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="479,175" sap2010:WorkflowViewState.IdRef="LogMessage_1">
-                                    <ui:LogMessage.Message>
-                                      <InArgument x:TypeArguments="x:Object">
-                                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">$"#{i:D2} Entering " + value + " to Field Labelled " + labelName</CSharpValue>
-                                      </InArgument>
-                                    </ui:LogMessage.Message>
-                                  </ui:LogMessage>
-                                  <uix:NTypeInto ActivateBefore="False" ClickBeforeMode="Single" ClipboardMode="WhenPossible" DeselectAfter="False" DisplayName="Type Into 'INPUT'" EmptyFieldMode="None" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,241" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="Simulate" ScopeIdentifier="b402e42b-de20-4289-8d02-a339569af225" Timeout="5" Version="V4">
-                                    <uix:NTypeInto.Target>
-                                      <uix:TargetAnchorable BrowserURL="theautomationchallenge.com" DesignTimeRectangle="993, 247, 173, 41" ElementType="InputBox" Guid="5f97f717-9700-41c8-9f9a-c3be8e2fbc83" ImageBase64="" InformativeScreenshot="d418c2b39f0440a1e85ca2b4d932fbde.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='The Automation Challenge' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
-                                        <uix:TargetAnchorable.FullSelectorArgument>
-                                          <InArgument x:TypeArguments="x:String">
-                                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_24" xml:space="preserve">ourContainer.Selector.Text +  string.Format("&lt;webctrl tag='DIV' class='bubble-element Group' innertext='*Submit*' /&gt;&lt;webctrl aaname='{0}' class='content' tag='DIV' /&gt;&lt;nav up='3' /&gt;&lt;webctrl tag='INPUT' /&gt;", labelName)</CSharpValue>
-                                          </InArgument>
-                                        </uix:TargetAnchorable.FullSelectorArgument>
-                                      </uix:TargetAnchorable>
-                                    </uix:NTypeInto.Target>
-                                    <uix:NTypeInto.Text>
-                                      <InArgument x:TypeArguments="x:String">
-                                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">value</CSharpValue>
-                                      </InArgument>
-                                    </uix:NTypeInto.Text>
-                                  </uix:NTypeInto>
-                                </Sequence>
-                              </ActivityAction>
-                            </ui:ForEach.Body>
-                            <ui:ForEach.Values>
-                              <InArgument x:TypeArguments="sc:IEnumerable">
-                                <CSharpValue x:TypeArguments="sc:IEnumerable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">dictMapping</CSharpValue>
-                              </InArgument>
-                            </ui:ForEach.Values>
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                          </ui:ForEach>
-                        </Sequence>
-                      </ui:CommentOut.Body>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ui:CommentOut>
-                    <ui:CommentOut sap2010:Annotation.AnnotationText="Parallel For Each" DisplayName="Comment Out - Parallel For Each" sap:VirtualizedContainerService.HintSize="515,88" sap2010:WorkflowViewState.IdRef="CommentOut_2">
-                      <ui:CommentOut.Body>
-                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="597,917" sap2010:WorkflowViewState.IdRef="Sequence_8">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <ParallelForEach x:TypeArguments="scg:KeyValuePair(x:String, x:String)" DisplayName="Parallel For Each" sap:VirtualizedContainerService.HintSize="563,857" sap2010:WorkflowViewState.IdRef="ParallelForEach`1_5">
-                            <ParallelForEach.Values>
-                              <InArgument x:TypeArguments="scg:IEnumerable(scg:KeyValuePair(x:String, x:String))">
-                                <CSharpValue x:TypeArguments="scg:IEnumerable(scg:KeyValuePair(x:String, x:String))" sap2010:WorkflowViewState.IdRef="CSharpValue`1_19">dictMapping</CSharpValue>
-                              </InArgument>
-                            </ParallelForEach.Values>
-                            <ActivityAction x:TypeArguments="scg:KeyValuePair(x:String, x:String)">
-                              <ActivityAction.Argument>
-                                <DelegateInArgument x:TypeArguments="scg:KeyValuePair(x:String, x:String)" Name="kvp" />
-                              </ActivityAction.Argument>
-                              <Sequence sap:VirtualizedContainerService.HintSize="513,686" sap2010:WorkflowViewState.IdRef="Sequence_6">
-                                <Sequence.Variables>
-                                  <Variable x:TypeArguments="x:String" Name="columnName" />
-                                  <Variable x:TypeArguments="x:String" Name="labelName" />
-                                  <Variable x:TypeArguments="x:String" Name="value" />
-                                </Sequence.Variables>
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,210" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
-                                  <ui:MultipleAssign.AssignOperations>
-                                    <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
-                                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
-                                        <ui:AssignOperation.To>
-                                          <OutArgument x:TypeArguments="x:String">
-                                            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">columnName</CSharpReference>
-                                          </OutArgument>
-                                        </ui:AssignOperation.To>
-                                        <ui:AssignOperation.Value>
-                                          <InArgument x:TypeArguments="x:String">
-                                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">kvp.Key</CSharpValue>
-                                          </InArgument>
-                                        </ui:AssignOperation.Value>
-                                      </ui:AssignOperation>
-                                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
-                                        <ui:AssignOperation.To>
-                                          <OutArgument x:TypeArguments="x:String">
-                                            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_10">labelName</CSharpReference>
-                                          </OutArgument>
-                                        </ui:AssignOperation.To>
-                                        <ui:AssignOperation.Value>
-                                          <InArgument x:TypeArguments="x:String">
-                                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">kvp.Value</CSharpValue>
-                                          </InArgument>
-                                        </ui:AssignOperation.Value>
-                                      </ui:AssignOperation>
-                                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
-                                        <ui:AssignOperation.To>
-                                          <OutArgument x:TypeArguments="x:String">
-                                            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_11">value</CSharpReference>
-                                          </OutArgument>
-                                        </ui:AssignOperation.To>
-                                        <ui:AssignOperation.Value>
-                                          <InArgument x:TypeArguments="x:String">
-                                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">row[columnName].ToString()</CSharpValue>
-                                          </InArgument>
-                                        </ui:AssignOperation.Value>
-                                      </ui:AssignOperation>
-                                    </scg:List>
-                                  </ui:MultipleAssign.AssignOperations>
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                </ui:MultipleAssign>
-                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="479,175" sap2010:WorkflowViewState.IdRef="LogMessage_2">
-                                  <ui:LogMessage.Message>
-                                    <InArgument x:TypeArguments="x:Object">
-                                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">"Entering " + value + " to Field Labelled " + labelName</CSharpValue>
-                                    </InArgument>
-                                  </ui:LogMessage.Message>
-                                </ui:LogMessage>
-                                <uix:NTypeInto ActivateBefore="False" ClickBeforeMode="None" ClipboardMode="Always" DeselectAfter="False" DisplayName="Type Into 'INPUT'" EmptyFieldMode="None" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="479,241" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="Simulate" ScopeIdentifier="b402e42b-de20-4289-8d02-a339569af225" Version="V4">
-                                  <uix:NTypeInto.Target>
-                                    <uix:TargetAnchorable BrowserURL="theautomationchallenge.com" DesignTimeRectangle="993, 247, 173, 41" ElementType="InputBox" Guid="5f97f717-9700-41c8-9f9a-c3be8e2fbc83" ImageBase64="" InformativeScreenshot="d418c2b39f0440a1e85ca2b4d932fbde.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='The Automation Challenge' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
-                                      <uix:TargetAnchorable.FullSelectorArgument>
-                                        <InArgument x:TypeArguments="x:String">
-                                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">string.Format("&lt;webctrl aaname='{0}' class='content' idx='1' tag='DIV' /&gt;&lt;nav up='3' /&gt;&lt;webctrl tag='INPUT' /&gt;", labelName)</CSharpValue>
-                                        </InArgument>
-                                      </uix:TargetAnchorable.FullSelectorArgument>
-                                    </uix:TargetAnchorable>
-                                  </uix:NTypeInto.Target>
-                                  <uix:NTypeInto.Text>
-                                    <InArgument x:TypeArguments="x:String">
-                                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">value</CSharpValue>
-                                    </InArgument>
-                                  </uix:NTypeInto.Text>
-                                </uix:NTypeInto>
-                              </Sequence>
-                            </ActivityAction>
-                          </ParallelForEach>
-                        </Sequence>
-                      </ui:CommentOut.Body>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ui:CommentOut>
-                    <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'Submit'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="515,181" sap2010:WorkflowViewState.IdRef="NClick_2" InScope="{x:Null}" InUiElement="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="b402e42b-de20-4289-8d02-a339569af225" Timeout="{x:Null}" Version="V4">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="515,180" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b402e42b-de20-4289-8d02-a339569af225" Version="V4">
                       <uix:NClick.Target>
-                        <uix:TargetAnchorable Accuracy="0.9" BrowserURL="theautomationchallenge.com" ContentHash="5RF4bChJEkmEJIWrOTVczA" DesignTimeRectangle="1198, 297, 167, 54" ElementType="Button" Guid="557757ad-7482-4eaa-870d-6511a68d5754" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKcAAAA2CAYAAACiLIkKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARDSURBVHhe7Z3NS9xAGIfzzxT6byjtufeCh4KXHlvoqVC8SXsqFAQPpdBSWCwUCvWrl1178NJFT4FFd0VRWVEXdw2J0f14m9/ETBKNX9jV6eY38EBm8ia7sA/vzDt7GMvzPHFdVxzHkYODA6nX67K+vi7ValVWV1dlZWWFkL4Av+AZfIN38A8ewkd4aUVi7u3tSa1Wk3K5LMViUebm5mRmZkamp6cJ6QvwC57BN3gH/+BhJKgViVmpVGRhYUF+v30j9tNHsvn4oWwPPyCkr8Az+Abv4B88jAS1kEqRWnHjz4tnmS8g5C6Af/AQPsJLC3M9UirMzXqAkLsEHsJHeGlhMVoqlVRqzQom5C6Bh/ARXlpIoViUco1JTAAewkd4aaGcR9WUFUjIfQAf4aWF/SaU9VlBhNwH8BFeUk5iHJSTGAvlJMZCOYmxUE5iLJSTGAvlJMZCOYmxUE5iLJSTGAvlJMZCOYmx5ErORqEk7abo1t21xXs/lBl7Fc1yK3zH8njm/dsxLj6+Z2dTjsaz7ueD/Mj5riRdpVPQjn3pdaLrqrivM+KvoLXcTzlHxV1rSa+5JM6r5HggrYNPbYk/kRwfTHIjZ5TpevaE7GBs5KV4W2pIuuWxzGcuo79yXgTlHEgimbSc4IctPc+XzmJCztmqipONqdOxKWmj7yxKK4oJ0HJu2dI5VpfSq5fk8Hkcsz08Fk7PgUxtu6qzdbfyRZrfbeme9ntrU9JIvDsl4YezY4mmv+Ngkhs5tycW42m9WRX/57jsj2TE3VBO1Tr+6UXQguf2dVxaqN6pxLol+u3Z5No3K0OOyVE98TlYmgSSx88MHvmRM6BRWNRZTrVOkNF+jcWZFNxUTm9JDgPJdyYj+TfF09LHcnZKo0F/VI52w36YwYfEqYTCpZcHWXJeNj6Y5ErOkCdy8HVeThpRFvLl5Fsia91UTh2XJc75MXcDfWTK9Hso53lyI6djB9Wv15LjQjQ2FAsWrPl0LOU0hvzIuYofNZhOKx9lV43FcmKK1bGRnLvzYZHyaUl66N9qWu+DnJPJ8cEkN3LG8gQtKGDi4sSX48+Jaf2i/dBrFkSovM8XRP9Kzpdy1FDh6jNTuwwDSG7kBOE/RImK19kUv4BCJRk3JM1SctvHDmU9I6f+h2htSdqeulRbSa3UDkC8laTlXFOh15dTbyWFNBJbUOlnBo9cyUn+LygnMRbKSYyFchJjoZzEWCgnMRbKSYyFchJjoZzEWCgnMRbKSYyFchJjoZzEWCgnMRYtJ496Iaahj3rhIVnEJFKHZPF4QWISqeMFeTArMYnUwaw80pqYwrkjrXHoOg5fxyHsuAFzkVq5BiV3ATyDb/AO/sFD+AgvLdd11QUGarWaSqnFYlEtSlE1oawnpB/AL3gG3+Ad/IvEhJeW53nqAgNIpZjrsRhFakU5j/0mQvoB/IJn8A3ewb9ITM/z5C9vzEDc04I0BQAAAABJRU5ErkJggg==" InformativeScreenshot="d54ff9730c2ab9157f48e42523f87d05.png" Reference="CT4qVuziCUmEeHDkXumYWg/COWZHNby106c2ufv0oJoxg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='The Automation Challenge' /&gt;" SearchSteps="Image" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                        <uix:TargetAnchorable Accuracy="0.9" BrowserURL="theautomationchallenge.com" ContentHash="7h9GG1pQCkaA_FFgs3_Trw" DesignTimeRectangle="1198, 297, 167, 54" ElementType="Button" Guid="557757ad-7482-4eaa-870d-6511a68d5754" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKcAAAA2CAYAAACiLIkKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARDSURBVHhe7Z3NS9xAGIfzzxT6byjtufeCh4KXHlvoqVC8SXsqFAQPpdBSWCwUCvWrl1178NJFT4FFd0VRWVEXdw2J0f14m9/ETBKNX9jV6eY38EBm8ia7sA/vzDt7GMvzPHFdVxzHkYODA6nX67K+vi7ValVWV1dlZWWFkL4Av+AZfIN38A8ewkd4aUVi7u3tSa1Wk3K5LMViUebm5mRmZkamp6cJ6QvwC57BN3gH/+BhJKgViVmpVGRhYUF+v30j9tNHsvn4oWwPPyCkr8Az+Abv4B88jAS1kEqRWnHjz4tnmS8g5C6Af/AQPsJLC3M9UirMzXqAkLsEHsJHeGlhMVoqlVRqzQom5C6Bh/ARXlpIoViUco1JTAAewkd4aaGcR9WUFUjIfQAf4aWF/SaU9VlBhNwH8BFeUk5iHJSTGAvlJMZCOYmxUE5iLJSTGAvlJMZCOYmxUE5iLJSTGAvlJMZCOYmx5ErORqEk7abo1t21xXs/lBl7Fc1yK3zH8njm/dsxLj6+Z2dTjsaz7ueD/Mj5riRdpVPQjn3pdaLrqrivM+KvoLXcTzlHxV1rSa+5JM6r5HggrYNPbYk/kRwfTHIjZ5TpevaE7GBs5KV4W2pIuuWxzGcuo79yXgTlHEgimbSc4IctPc+XzmJCztmqipONqdOxKWmj7yxKK4oJ0HJu2dI5VpfSq5fk8Hkcsz08Fk7PgUxtu6qzdbfyRZrfbeme9ntrU9JIvDsl4YezY4mmv+Ngkhs5tycW42m9WRX/57jsj2TE3VBO1Tr+6UXQguf2dVxaqN6pxLol+u3Z5No3K0OOyVE98TlYmgSSx88MHvmRM6BRWNRZTrVOkNF+jcWZFNxUTm9JDgPJdyYj+TfF09LHcnZKo0F/VI52w36YwYfEqYTCpZcHWXJeNj6Y5ErOkCdy8HVeThpRFvLl5Fsia91UTh2XJc75MXcDfWTK9Hso53lyI6djB9Wv15LjQjQ2FAsWrPl0LOU0hvzIuYofNZhOKx9lV43FcmKK1bGRnLvzYZHyaUl66N9qWu+DnJPJ8cEkN3LG8gQtKGDi4sSX48+Jaf2i/dBrFkSovM8XRP9Kzpdy1FDh6jNTuwwDSG7kBOE/RImK19kUv4BCJRk3JM1SctvHDmU9I6f+h2htSdqeulRbSa3UDkC8laTlXFOh15dTbyWFNBJbUOlnBo9cyUn+LygnMRbKSYyFchJjoZzEWCgnMRbKSYyFchJjoZzEWCgnMRbKSYyFchJjoZzEWCgnMRYtJ496Iaahj3rhIVnEJFKHZPF4QWISqeMFeTArMYnUwaw80pqYwrkjrXHoOg5fxyHsuAFzkVq5BiV3ATyDb/AO/sFD+AgvLdd11QUGarWaSqnFYlEtSlE1oawnpB/AL3gG3+Ad/IvEhJeW53nqAgNIpZjrsRhFakU5j/0mQvoB/IJn8A3ewb9ITM/z5C9vzEDc04I0BQAAAABJRU5ErkJggg==" InformativeScreenshot="d54ff9730c2ab9157f48e42523f87d05.png" Reference="CT4qVuziCUmEeHDkXumYWg/COWZHNby106c2ufv0oJoxg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='The Automation Challenge' /&gt;" SearchSteps="Image" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                          <uix:TargetAnchorable.FullSelectorArgument>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_46">uiContainer.Selector.Text + "&lt;webctrl aaname='Submit' tag='BUTTON' /&gt;"</CSharpValue>
+                            </InArgument>
+                          </uix:TargetAnchorable.FullSelectorArgument>
+                        </uix:TargetAnchorable>
                       </uix:NClick.Target>
                     </uix:NClick>
                   </Sequence>
