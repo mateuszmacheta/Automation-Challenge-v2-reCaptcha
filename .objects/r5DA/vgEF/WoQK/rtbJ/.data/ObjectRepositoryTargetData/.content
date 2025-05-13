@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0WotXQJx-k2oOOPiPB-ZTQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="theautomationchallenge.com" DesignTimeRectangle="847, 299, 25, 25" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='DIV' innertext=' Get through this reCAPTCHA to continuepresentationPrivacyTerms' /&gt;&lt;webctrl aaname='presentation' tag='BUTTON' /&gt;" Guid="b4a41b89-f356-422c-9fdd-e29f81d65a5b" ScopeSelectorArgument="&lt;html app='msedge.exe' title='The Automation Challenge' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="c2ff4ead76c4b13d539c8c21122fd52a.png" xmlns="">00inUbppYRk6Tw2e96CFlLQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
